@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css" />
+    <title>Moviiies</title>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <div class="menu-box" id="main-menu">
+      <div class="menu-title">
+        <div class="logo">M<span>oo</span>vie</div>
+      </div>
+      <ul class="menu-links">
+        <h3>Our <span>Sections</span></h3>
+        <a href="#">All</a>
+        <a href="#">Action</a>
+        <a href="#">Romantice</a>
+        <a href="#">Sciense Fiction</a>
+        <a href="#">Cartoon</a>
+      </ul>
+    </div>
+    <header class="main-head">
+      <nav class="main-nav">
+        <div class="logo">M<span>oo</span>vie</div>
+        <div class="toggle-icon" id="toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <input type="search" class="search-nav" placeholder="search" />
+        <ul class="nav-links">
+          <a href="#">All</a>
+          <a href="#">Action</a>
+          <a href="#">Romantice</a>
+          <a href="#">Sciense Fiction</a>
+          <a href="#">Cartoon</a>
+        </ul>
+      </nav>
+    </header>
+    <section class="auto-side-bar">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img src="images/avengers.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="images/elbeat beaty.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="images/Rampage.jpg" style="width: 100%" />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 6</div>
+          <img src="images/room 207.jpg" style="width: 100%" />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 6</div>
+          <img src="images/Suits.jpg" style="width: 100%" />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 6</div>
+          <img src="images/The Batman Wallpaper.png" style="width: 100%" />
+        </div>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 2000);
+        }
+      </script>
+    </section>
+    <section class="most-viewed">
+      <div class="most-title">
+        <h3>Most Viewed</h3>
+        <p>View All</p>
+      </div>
+      <div class="slider-for">
+        <a href="avvengers.html" class="item-slider">
+          <img src="images/avengers.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="filmPage.html" class="item-slider">
+          <img src="images/elbeat beaty.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="Rampage.html" class="item-slider">
+          <img src="images/Rampage.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="room 207.html" class="item-slider">
+          <img src="images/room 207.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="Suits.html" class="item-slider">
+          <img src="images/Suits.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="avvengers.html" class="item-slider">
+          <img src="images/avengers.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="filmPage.html" class="item-slider">
+          <img src="images/elbeat beaty.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="Rampage.html" class="item-slider">
+          <img src="images/Rampage.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="room 207.html" class="item-slider">
+          <img src="images/room 207.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="Suits.html" class="item-slider">
+          <img src="images/Suits.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+      </div>
+    </section>
+    <section class="most-viewed">
+      <div class="most-title">
+        <h3>Last Addition</h3>
+        <p>View All</p>
+      </div>
+      <div class="slider-for last-adiition">
+        <a href="avvengers.html" class="item-slider">
+          <img src="images/avengers.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="filmPage.html" class="item-slider">
+          <img src="images/elbeat beaty.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="Rampage.html" class="item-slider">
+          <img src="images/Rampage.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="room 207.html" class="item-slider">
+          <img src="images/room 207.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="Suits.html" class="item-slider">
+          <img src="images/Suits.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="avvengers.html" class="item-slider">
+          <img src="images/avengers.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="filmPage.html" class="item-slider">
+          <img src="images/elbeat beaty.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="Rampage.html" class="item-slider">
+          <img src="images/Rampage.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="room 207.html" class="item-slider">
+          <img src="images/room 207.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+        <a href="Suits.html" class="item-slider">
+          <img src="images/Suits.jpg" alt="" />
+          <div class="film-info"></div>
+        </a>
+      </div>
+    </section>
+    <footer class="foot">
+      <div class="foot-container">
+        <div class="learn-more-sec">
+          <h3>Learn More</h3>
+          <ul>
+            <a href="#">About Us</a>
+            <a href="#">Prees</a>
+            <a href="#">Relaases</a>
+            <a href="#">Environment</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+          </ul>
+        </div>
+        <div class="ticket-sec">
+          <h3>Tickets & Booking</h3>
+          <ul>
+            <a href="#">Lift Tickets</a>
+            <a href="#">Sesson Passes</a>
+            <a href="#">Vocation</a>
+          </ul>
+        </div>
+        <div class="contact-us-sec">
+          <h3>Contact Us</h3>
+          <ul>
+            <p>Hotel Reservation:<span>123-456-7890</span></p>
+            <p>Ticket Office:<span>123-456-7890</span></p>
+          </ul>
+        </div>
+        <div class="social-icons-foot">
+          <h3>Social</h3>
+          <ul>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="slick-1.8.1/slick/slick.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
